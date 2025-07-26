@@ -8,6 +8,43 @@
   <style>
 /* 포트폴리오 전체 페이지 공통 스타일 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@media (max-width: 768px) {
+  .profile-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .profile-photo {
+    margin-bottom: 1rem;
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .project-table a.button {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .project-table td.project-title {
+    white-space: normal;
+  }
+}
 
 body {
   margin: 0;
@@ -296,7 +333,7 @@ footer {
             <span class="badge">SQLite</span>
             <span class="badge">REST API</span>
           </td>
-          <td><a href="Triply.html" class="button">자세히</a></td>
+          <td><a href="triply.html" class="button">자세히</a></td>
         </tr>
         <tr>
           <td class="project-title">주식 뉴스 크롤링 앱(진행중)</td>
@@ -307,7 +344,7 @@ footer {
             <span class="badge">Pandas</span>
             <span class="badge">React</span>
           </td>
-          <td><a href="Stock.html" class="button">자세히</a></td>
+          <td><a href="stock.html" class="button">자세히</a></td>
         </tr>
       </tbody>
     </table>
